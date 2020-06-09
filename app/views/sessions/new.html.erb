@@ -1,0 +1,32 @@
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1　class="title">ログイン</h1>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-5">
+          <%= form_for(:session, url: login_path) do |f| %>
+            <div class="field">
+              <%= f.label :email ,class: "label" %>
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => "Email", class: "input" %>
+            </div>
+            <div class="field">
+              <%= f.label :password ,class: "label" %>
+              <%= f.password_field :password,autofocus: true, autocomplete: "current-password", :placeholder => "password", class: "input" %>
+            </div>
+            <div class="actions">
+              <%= f.submit "Log in" ,class: "button is-success" %>
+            </div>
+          <% end %>
+          <%= link_to '新規登録', create_user_path %>
+        </div>
+      </div>
+  </div>
+</section>

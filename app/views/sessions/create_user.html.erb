@@ -1,0 +1,48 @@
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1　class="title">新規登録</h1>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-5">
+          <% if @user.errors.any? %>
+            <div id="error_explanation" class="alert alert-danger">
+              <ul>
+                <% @user.errors.full_messages.each do |message| %>
+                  <li style = "color:red;"><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+          <%= form_for @user,url: create_user_path do |f| %>
+            <div class="field">
+              <%= f.label :name ,class: "label" %>
+              <%= f.text_field :name, autofocus: true, autocomplete: "username", :placeholder => "Name", class: "input" %>
+            </div>
+            <div class="field">
+              <%= f.label :email ,class: "label" %>
+              <%= f.email_field :email, autofocus: true, autocomplete: "email", :placeholder => "Email", class: "input" %>
+            </div>
+            <div class="field">
+              <%= f.label :password ,class: "label" %>
+              <%= f.password_field :password,autofocus: true, autocomplete: "new-password", :placeholder => "password", class: "input" %>
+            </div>
+            <div class="field">
+              <%= f.label :password_confirmation ,class: "label" %>
+              <%= f.password_field :password_confirmation,autofocus: true, autocomplete: "new-password", :placeholder => "password", class: "input" %>
+            </div>
+            <div class="actions">
+              <%= f.submit "Sign Up" ,class: "button is-success" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+  </div>
+</section>

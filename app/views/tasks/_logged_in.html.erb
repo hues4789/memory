@@ -1,0 +1,65 @@
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+        <div class="navbar">
+          <div class="navbar-brand">Memory</div>
+          <div class="navbar-end"><%= link_to "ログアウト", logout_path, method: :delete %></div>
+        </div>
+    </div> 
+  </div>
+</section>
+    <header>
+      <section class="level">
+      <div class="submenu column is-2"></div>
+        <div class="level-left column is-8">
+          <div class="level-item tabs">
+            <ul>
+              <li class="is-active"><a>Today</a></li>
+              <li><a>登録</a></li>
+              <li><a>ランダム</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="submenu column is-2"></div>
+    </section>
+  <header>
+  <main class="columns">
+    <div class="submenu column is-2"></div>
+    <div class="submenu column is-8">
+      <div class="media-content">
+        <div class="media">
+        <strong>1day</strong><br>
+　　       <% @learncontext.each do |context|%>
+            <%= context.LearnContext%><br>
+          <% end %>
+        </div>
+        <div class="media">
+          <strong>3day</strong><br>
+　　         <% @learncontext.each do |context|%>
+              <%= context.LearnContext%><br>
+            <% end %>
+        </div>
+          <div class="media">
+            <strong>7day</strong><br>
+　　         <% @learncontext.each do |context|%>
+              <%= context.LearnContext%><br>
+            <% end %>
+        </div>
+          <div class="media">
+            <strong>1Month</strong><br>
+　　           <% @learncontext.each do |context|%>
+                <%= context.LearnContext%><br>
+              <% end %>
+          </div>
+        </div>
+ 　　　</div>
+
+      <div class="submenu　column　is-2">
+        <aside class="box">
+          <ul class="menu-list">
+            <li><a href="#">yamadatarou</a></li>
+            <li><a href="#">設定</a></li>
+          </ul>
+        </aside>
+　　　 </div>
+　</main>
