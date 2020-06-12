@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       log_in user
       redirect_to tasks_path
     else
-      flash[:fail] = "ログインに失敗しました"
+      flash.now[:fail] = "ログインに失敗しました"
       render 'new'
     end
   end
@@ -26,7 +26,7 @@ class SessionsController < ApplicationController
       flash[:success] = "アカウントを作成しました"
       redirect_to tasks_path
     else
-      flash[:fail] = "登録に失敗しました"
+      flash.now[:fail] = "登録に失敗しました"
       render 'create_user'
     end
   end

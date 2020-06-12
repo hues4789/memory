@@ -1,0 +1,65 @@
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+        <div class="navbar">
+          <div class="navbar-brand">Memory</div>
+          <div class="navbar-end"><%= link_to "ログアウト", logout_path, method: :delete %></div>
+        </div>
+    </div> 
+  </div>
+</section>
+    <header>
+      <section class="level">
+      <div class="submenu column is-2"></div>
+        <div class="level-left column is-8">
+          <div class="level-item tabs">
+            <ul>
+              <li><%= link_to 'Today', tasks_path %></li>
+              <li class="is-active"><%= link_to '登録', create_task_path %></li>
+              <li><%= link_to 'ランダム', create_user_path %></li>
+            </ul>
+          </div>
+        </div>
+        <div class="submenu column is-2"></div>
+    </section>
+  <header>
+  <main class="columns">
+    <div class="submenu column is-2"></div>
+    <div class="submenu column is-8">
+      <section class="section">
+        <div class="container">
+            <div class="columns is-centered">
+              <div class="column is-5">
+                <% if @learncontext.errors.any? %>
+                  <div id="error_explanation" class="alert alert-danger">
+                    <ul>
+                      <% @learncontext.errors.full_messages.each do |message| %>
+                        <li style = "color:red;"><%= message %></li>
+                      <% end %>
+                    </ul>
+                  </div>
+                <% end %>
+                <%= form_for @learncontext,url: create_task_path do |f| %>
+                  <div class="field">
+                    <%= f.label :name ,class: "label" %>
+                    <%= f.text_field :LearnContext, autofocus: true, autocomplete: "username", :placeholder => "Name", class: "input" %>
+                  </div>
+                  <div class="actions">
+                    <%= f.submit "Sign Up" ,class: "button is-success" %>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+        </div>
+      </section>
+      </div>
+
+      <div class="submenu　column　is-2">
+        <aside class="box">
+          <ul class="menu-list">
+            <li><a href="#">yamadatarou</a></li>
+            <li><a href="#">設定</a></li>
+          </ul>
+        </aside>
+　　　 </div>
+　</main>

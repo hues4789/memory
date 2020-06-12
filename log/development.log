@@ -5438,3 +5438,1151 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 179ms (Views: 161.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 172.19.0.1 at 2020-06-10 09:48:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1041.9ms)
+Started GET "/" for 172.19.0.1 at 2020-06-10 09:48:13 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (5.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8457ms (Views: 8439.3ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 4536ms (Views: 4525.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2020-06-10 14:01:29 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (398.8ms)
+Completed 200 OK in 1358ms (Views: 1335.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2020-06-10 14:01:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T4rS6NLrewlYUUtQ2pP3hQ0ZXeRQdjr67S4yi0S/YmJBhOeLSizsu4DAejwuZCfjnX0cvqQx2jo4H306widr7A==", "session"=>{"email"=>"yajima@docomo.ne.jp", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'yajima@docomo.ne.jp' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 249ms (Views: 167.0ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2020-06-10 14:01:59 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rGWuq76Jt5xnV449SmPjvfF6tF2WgRaGaTnhWlyTF76ia5vIJk4gLr/Gv1G+lDPbYR71B2LG9ka8CK7r2gseMA==", "session"=>{"email"=>"yajima@docomo.ne.jp", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'yajima@docomo.ne.jp' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 59ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-10 14:01:59 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (3.6ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (11.2ms)
+  Rendered tasks/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 197ms (Views: 169.4ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2020-06-10 14:08:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 202ms (Views: 185.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2020-06-10 14:08:14 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mtIp6ywE0tfc6Bc6OoResKP4BaVLqtgyNmm6Vriy4FSU3ByItMNFZQR5JlbOc47WM5xE/7/tOPLjWPXnPirp2g==", "session"=>{"email"=>"yajima@docomo.ne.jp", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'yajima@docomo.ne.jp' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 263ms (Views: 164.4ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2020-06-10 14:08:40 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W5jR2k8m1K0AIl16M0+dCun+T/cpeYRjhCHIQWty0LVVluS51+FDH9izbBbHuE1seZoOrd0+ZKNREIfw7erZOw==", "session"=>{"email"=>"yajima@docomo.ne.jp", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'yajima@docomo.ne.jp' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 59ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-10 14:08:40 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (2.1ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (10.6ms)
+  Rendered tasks/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 203ms (Views: 178.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2020-06-10 14:08:44 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 206ms (Views: 187.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2020-06-10 14:08:47 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yCmJs4wcZEARFCS+EUqFSSlHspIOyv8jG7kzLR25ZrTGJ7zQFNvz8smFFdLlvVUvuSPzyPqNH+POiHycmyFvOg==", "session"=>{"email"=>"yajima@docomo.ne.jp", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'yajima@docomo.ne.jp' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 281ms (Views: 222.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2020-06-10 14:08:50 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 210ms (Views: 191.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_user" for 172.19.0.1 at 2020-06-10 14:09:02 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create_user as HTML
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 171ms (Views: 152.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_user" for 172.19.0.1 at 2020-06-10 14:09:05 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create_user as HTML
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 222ms (Views: 200.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2020-06-10 14:09:08 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"waAPJBqyWLfq0fZBOSNaJE8ItmBBC1DDjkYPZDK7J1/PrjpHgnXPBTJAxy3N1IpC32z3OrVMsANbd0DVtCMu0Q==", "session"=>{"email"=>"yajima@docomo.ne.jp", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'yajima@docomo.ne.jp' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 252ms (Views: 194.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/create_user" for 172.19.0.1 at 2020-06-10 14:09:10 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create_user as HTML
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 185ms (Views: 167.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_user" for 172.19.0.1 at 2020-06-10 14:09:17 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create_user_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1KBxYbgCsZjNarcB9MYqPYw41M3VxzS4RbSVcomiNoUGgyr7MsHru7daFRHFEXwhIF7oL8v/0zYj4iy7/OHPcw==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sessions_controller.rb:24
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/sessions_controller.rb:24
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 193ms (Views: 184.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/create_user" for 172.19.0.1 at 2020-06-10 14:09:19 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create_user as HTML
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 198ms (Views: 179.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_user" for 172.19.0.1 at 2020-06-10 14:09:38 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create_user as HTML
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 145ms (Views: 110.8ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/create_user" for 172.19.0.1 at 2020-06-10 14:09:40 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create_user_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2rjOnX6oNPazG+Yz0UvZreFrXxXR7GNBuqceI4MZYWxZNZZ7T03YQJdXvQ7sv8AJ+HsJqMAUU3T29PJCJRsCw==", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sessions_controller.rb:24
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/sessions_controller.rb:24
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 181ms (Views: 172.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/create_user" for 172.19.0.1 at 2020-06-10 14:09:43 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create_user as HTML
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 160ms (Views: 144.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 172.19.0.1 at 2020-06-10 14:09:46 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 212ms (Views: 193.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.19.0.1 at 2020-06-11 10:38:07 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (3.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (304.9ms)
+Completed 200 OK in 844ms (Views: 832.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2020-06-11 10:38:32 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gweQCMARqQ9WPvBgrQt+zaMbV2aD1QRkiNo6f66DowQCsG0vr2XqarvC+ZtMERNIdW56KJwwE5jbeNXEWCQzEg==", "session"=>{"email"=>"yajima@docomo.ne.jp", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'yajima@docomo.ne.jp' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 98ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 10:38:32 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (2.6ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (9.1ms)
+  Rendered tasks/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 125ms (Views: 105.4ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 11:15:04 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (1.6ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.8ms)
+  Rendered tasks/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 174ms (Views: 152.9ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 11:17:55 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.4ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (2.8ms)
+  Rendered tasks/index.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 111ms (Views: 99.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 172.19.0.1 at 2020-06-11 11:47:06 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 170ms (Views: 153.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2020-06-11 11:48:42 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yv4heeuuGJACHiAPaOsuxRixckFA0Q/Zld7TemJsPCbjSdxehNpb9e/iKfSJ8UNAzsRfD180GCXGfDzBlMusMA==", "session"=>{"email"=>"yajima@docomo.ne.jp", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'yajima@docomo.ne.jp' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 62ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 11:48:42 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (1.9ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (4.3ms)
+  Rendered tasks/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 215ms (Views: 195.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 11:48:49 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.4ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (2.8ms)
+  Rendered tasks/index.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 208ms (Views: 192.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 11:49:08 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (2.8ms)
+  Rendered tasks/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 168ms (Views: 153.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 11:49:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.1ms)
+  Rendered tasks/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 222ms (Views: 199.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 11:50:04 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (3.2ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (11.3ms)
+  Rendered tasks/index.html.erb within layouts/application (55.3ms)
+Completed 200 OK in 759ms (Views: 718.2ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/" for 172.19.0.1 at 2020-06-11 11:54:06 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (244.3ms)
+Completed 200 OK in 891ms (Views: 877.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2020-06-11 11:54:16 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5Da4HaeJ4I/OI476iZrD+rGLjYBqKN2L1nt4eqmyO3xlgUU6yP2j6iPfhwFogK5/Z/6gznXNyneF2ZfBXxWrag==", "session"=>{"email"=>"yajima@docomo.ne.jp", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'yajima@docomo.ne.jp' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 102ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 11:54:16 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (3.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (16.0ms)
+  Rendered tasks/index.html.erb within layouts/application (33.1ms)
+Completed 200 OK in 191ms (Views: 162.0ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 11:55:03 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.2ms)
+  Rendered tasks/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 187ms (Views: 165.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 11:55:35 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.4ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.3ms)
+  Rendered tasks/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 222ms (Views: 204.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/create_user" for 172.19.0.1 at 2020-06-11 11:55:39 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create_user as HTML
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 166ms (Views: 146.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 11:56:23 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.4ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (2.8ms)
+  Rendered tasks/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 220ms (Views: 203.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 11:56:35 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.5ms)
+  Rendered tasks/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 220ms (Views: 200.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 11:56:47 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.4ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (2.8ms)
+  Rendered tasks/index.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 238ms (Views: 212.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/create_user" for 172.19.0.1 at 2020-06-11 11:56:49 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create_user as HTML
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 189ms (Views: 170.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 12:08:32 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (5.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (14.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (1.8ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (4.7ms)
+  Rendered tasks/index.html.erb within layouts/application (36.3ms)
+Completed 500 Internal Server Error in 1816ms (ActiveRecord: 16.4ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /myapp/app/assets/config
+  /myapp/app/assets/images
+  /myapp/app/assets/javascripts
+  /myapp/app/assets/stylesheets
+  /usr/local/bundle/gems/bulma-rails-0.8.2/app/assets/stylesheets
+  /usr/local/bundle/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/bundle/gems/actioncable-5.2.4.3/lib/assets/compiled
+  /usr/local/bundle/gems/activestorage-5.2.4.3/app/assets/javascripts
+  /usr/local/bundle/gems/actionview-5.2.4.3/lib/assets/compiled
+  /usr/local/bundle/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /myapp/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.scss:18
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1614054261021355542_70034879209320'
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 12:11:36 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (2.8ms)
+  Rendered tasks/index.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 948ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /myapp/app/assets/config
+  /myapp/app/assets/images
+  /myapp/app/assets/javascripts
+  /myapp/app/assets/stylesheets
+  /usr/local/bundle/gems/bulma-rails-0.8.2/app/assets/stylesheets
+  /usr/local/bundle/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/bundle/gems/actioncable-5.2.4.3/lib/assets/compiled
+  /usr/local/bundle/gems/activestorage-5.2.4.3/app/assets/javascripts
+  /usr/local/bundle/gems/actionview-5.2.4.3/lib/assets/compiled
+  /usr/local/bundle/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /myapp/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.scss:18
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1614054261021355542_70034911718760'
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 12:11:55 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (2.3ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (10.3ms)
+  Rendered tasks/index.html.erb within layouts/application (54.6ms)
+Completed 500 Internal Server Error in 1878ms (ActiveRecord: 11.3ms)
+
+
+  
+ActionView::Template::Error (Error: argument `$map2` of `map-merge($map1, $map2)` must be a map
+        on line 157:9 of ../usr/local/bundle/gems/bootstrap-4.5.0/assets/stylesheets/bootstrap/_variables.scss, in function `map-merge`
+        from line 157:9 of ../usr/local/bundle/gems/bootstrap-4.5.0/assets/stylesheets/bootstrap/_variables.scss
+        from line 9:9 of ../usr/local/bundle/gems/bootstrap-4.5.0/assets/stylesheets/_bootstrap.scss
+        from line 18:10 of app/assets/stylesheets/application.scss
+>> $sizes: map-merge(
+
+   --------^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___3731815601235962314_70303519559700'
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 12:12:32 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.6ms)
+  Rendered tasks/index.html.erb within layouts/application (16.9ms)
+Completed 200 OK in 8648ms (Views: 8636.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/create_user" for 172.19.0.1 at 2020-06-11 12:12:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create_user as HTML
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (1116.8ms)
+Completed 200 OK in 1470ms (Views: 1455.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 12:28:57 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (4.0ms)[0m  [1m[34mSELECT  `t_learn_contexts`.* FROM `t_learn_contexts` LIMIT 11[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE TLearnContext Load (0.0ms)[0m  [1m[34mSELECT  `t_learn_contexts`.* FROM `t_learn_contexts` LIMIT 11[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE TLearnContext Load (0.0ms)[0m  [1m[34mSELECT  `t_learn_contexts`.* FROM `t_learn_contexts` LIMIT 11[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE TLearnContext Load (0.0ms)[0m  [1m[34mSELECT  `t_learn_contexts`.* FROM `t_learn_contexts` LIMIT 11[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE TLearnContext Load (0.0ms)[0m  [1m[34mSELECT  `t_learn_contexts`.* FROM `t_learn_contexts` LIMIT 11[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:4
+  [1m[36mCACHE TLearnContext Load (0.0ms)[0m  [1m[34mSELECT  `t_learn_contexts`.* FROM `t_learn_contexts` LIMIT 11[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:4
+  [1m[36mCACHE TLearnContext Load (0.0ms)[0m  [1m[34mSELECT  `t_learn_contexts`.* FROM `t_learn_contexts` LIMIT 11[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:4
+  [1m[36mCACHE TLearnContext Load (0.0ms)[0m  [1m[34mSELECT  `t_learn_contexts`.* FROM `t_learn_contexts` LIMIT 11[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:4
+  Rendered tasks/_logged_in.html.erb (270.2ms)
+  Rendered tasks/index.html.erb within layouts/application (310.0ms)
+Completed 500 Internal Server Error in 383ms (ActiveRecord: 13.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_path' for #<#<Class:0x00007f92a48df520>:0x000055aca87c7b30>
+Did you mean?  video_path):
+    14:         <div class="level-left column is-8">
+    15:           <div class="level-item tabs">
+    16:             <ul>
+    17:               <li class="is-active"><%= link_to 'Today', index_path %></li>
+    18:               <li><%= link_to '登録', create_task_path%></li>
+    19:               <li><%= link_to 'ランダム', create_user_path %></li>
+    20:             </ul>
+  
+app/views/tasks/_logged_in.html.erb:17:in `_app_views_tasks__logged_in_html_erb___2646835618383158911_70133902080760'
+app/views/tasks/index.html.erb:2:in `_app_views_tasks_index_html_erb___2327819063012770841_47100024734080'
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 12:29:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.4ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.0ms)
+  Rendered tasks/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 966ms (Views: 948.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 12:29:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized class variable @@learncontext in ActionView::CompiledTemplates):
+    39:                     </ul>
+    40:                   </div>
+    41:                 <% end %>
+    42:                 <%= form_for @@learncontext,url: create_user_path do |f| %>
+    43:                   <div class="field">
+    44:                     <%= f.label :name ,class: "label" %>
+    45:                     <%= f.text_field :LearnContext, autofocus: true, autocomplete: "username", :placeholder => "Name", class: "input" %>
+  
+app/views/tasks/create.html.erb:42:in `_app_views_tasks_create_html_erb___2329480635983668081_70133880613260'
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 12:30:11 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (383.0ms)
+Completed 200 OK in 705ms (Views: 687.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 12:30:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 316ms (Views: 300.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 12:31:23 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 404ms (Views: 383.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_user" for 172.19.0.1 at 2020-06-11 14:41:11 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#create_user as HTML
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (346.4ms)
+Completed 200 OK in 1700ms (Views: 1653.0ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/create_user" for 172.19.0.1 at 2020-06-11 15:04:18 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#create_user as HTML
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 264ms (Views: 229.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 172.19.0.1 at 2020-06-11 15:04:26 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 277ms (Views: 260.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 172.19.0.1 at 2020-06-11 15:04:44 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sHWdkWkjkOnfyy2C8t8mDuMTX4++QdUVg009bFQh0PsxwmC2BlfTjDI3JHkTxUuLNWZywaGkwunQ79LXooZA7Q==", "session"=>{"email"=>"yajima@docomo.ne.jp", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'yajima@docomo.ne.jp' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:8
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 60ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:04:44 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/myapp/app/controllers/tasks_controller.rb:13: syntax error, unexpected ')', expecting =>
+...[:user_id],learncontext_params)
+...                              ^):
+  
+app/controllers/tasks_controller.rb:13: syntax error, unexpected ')', expecting =>
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:10:02 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/myapp/app/controllers/tasks_controller.rb:25: syntax error, unexpected ':', expecting ')'
+...(:LearnContext).merge(:user_id: session[:user_id])
+...                              ^
+/myapp/app/controllers/tasks_controller.rb:25: syntax error, unexpected ')', expecting keyword_end
+...ge(:user_id: session[:user_id])
+...                              ^):
+  
+app/controllers/tasks_controller.rb:25: syntax error, unexpected ':', expecting ')'
+app/controllers/tasks_controller.rb:25: syntax error, unexpected ')', expecting keyword_end
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:13:08 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/myapp/app/controllers/tasks_controller.rb:25: syntax error, unexpected ':', expecting ')'
+...(:LearnContext).merge(:user_id: session[:user_id])
+...                              ^
+/myapp/app/controllers/tasks_controller.rb:25: syntax error, unexpected ')', expecting keyword_end
+...ge(:user_id: session[:user_id])
+...                              ^):
+  
+app/controllers/tasks_controller.rb:25: syntax error, unexpected ':', expecting ')'
+app/controllers/tasks_controller.rb:25: syntax error, unexpected ')', expecting keyword_end
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:14:51 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (3.3ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (10.6ms)
+  Rendered tasks/index.html.erb within layouts/application (42.2ms)
+Completed 200 OK in 857ms (Views: 823.4ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 15:16:20 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (274.8ms)
+Completed 500 Internal Server Error in 332ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_path' for #<#<Class:0x00007f0f3c1d2610>:0x0000558eddc3a890>
+Did you mean?  video_path):
+    14:         <div class="level-left column is-8">
+    15:           <div class="level-item tabs">
+    16:             <ul>
+    17:               <li><%= link_to 'Today', index_path %></li>
+    18:               <li class="is-active"><%= link_to '登録', create_path %></li>
+    19:               <li><%= link_to 'ランダム', create_user_path %></li>
+    20:             </ul>
+  
+app/views/tasks/create.html.erb:17:in `_app_views_tasks_create_html_erb___1498017527219182312_47036047207400'
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 15:17:41 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (235.0ms)
+Completed 500 Internal Server Error in 284ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `create_path' for #<#<Class:0x00007f0f3c1d2610>:0x00007f0f4001cdf8>
+Did you mean?  create_user_path):
+    15:           <div class="level-item tabs">
+    16:             <ul>
+    17:               <li><%= link_to 'Today', tasks_path %></li>
+    18:               <li class="is-active"><%= link_to '登録', create_path %></li>
+    19:               <li><%= link_to 'ランダム', create_user_path %></li>
+    20:             </ul>
+    21:           </div>
+  
+app/views/tasks/create.html.erb:18:in `_app_views_tasks_create_html_erb___1498017527219182312_69851737549780'
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 15:18:28 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (232.6ms)
+Completed 500 Internal Server Error in 272ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `create_task' for #<#<Class:0x00007f0f3c1d2610>:0x00007f0f3d42fe98>
+Did you mean?  create_task_url):
+    39:                     </ul>
+    40:                   </div>
+    41:                 <% end %>
+    42:                 <%= form_for @learncontext,url: create_task do |f| %>
+    43:                   <div class="field">
+    44:                     <%= f.label :name ,class: "label" %>
+    45:                     <%= f.text_field :LearnContext, autofocus: true, autocomplete: "username", :placeholder => "Name", class: "input" %>
+  
+app/views/tasks/create.html.erb:42:in `_app_views_tasks_create_html_erb___1498017527219182312_69851975607440'
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 15:19:01 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (340.4ms)
+Completed 200 OK in 614ms (Views: 598.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create_task" for 172.19.0.1 at 2020-06-11 15:19:06 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oBs7EjecNARqPchTXwa8qpnH+Xv2ZVpiWHTc7TOinMkhrMY1WOh3YYfBwai+HNEvT7LUNemATZ4L1jNWxQUM3w==", "t_learn_context"=>{"LearnContext"=>"aaa"}, "commit"=>"Sign Up"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: t_learn_contexts):
+  
+app/controllers/tasks_controller.rb:25:in `learncontext_params'
+app/controllers/tasks_controller.rb:13:in `create_post'
+Started POST "/create_task" for 172.19.0.1 at 2020-06-11 15:22:27 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oBs7EjecNARqPchTXwa8qpnH+Xv2ZVpiWHTc7TOinMkhrMY1WOh3YYfBwai+HNEvT7LUNemATZ4L1jNWxQUM3w==", "t_learn_context"=>{"LearnContext"=>"aaa"}, "commit"=>"Sign Up"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[36mTLearnContext Create (2.4ms)[0m  [1m[32mINSERT INTO `t_learn_contexts` (`user_id`, `LearnContext`, `created_at`, `updated_at`) VALUES (1, 'aaa', '2020-06-11 15:22:27', '2020-06-11 15:22:27')[0m
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:14
+Completed 500 Internal Server Error in 224ms (ActiveRecord: 10.8ms)
+
+
+  
+NameError (undefined local variable or method `create_path' for #<TasksController:0x00007f0f3da28ed0>
+Did you mean?  create_post):
+  
+app/controllers/tasks_controller.rb:16:in `create_post'
+Started POST "/create_task" for 172.19.0.1 at 2020-06-11 15:23:16 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create_post as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oBs7EjecNARqPchTXwa8qpnH+Xv2ZVpiWHTc7TOinMkhrMY1WOh3YYfBwai+HNEvT7LUNemATZ4L1jNWxQUM3w==", "t_learn_context"=>{"LearnContext"=>"aaa"}, "commit"=>"Sign Up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[36mTLearnContext Create (0.7ms)[0m  [1m[32mINSERT INTO `t_learn_contexts` (`user_id`, `LearnContext`, `created_at`, `updated_at`) VALUES (1, 'aaa', '2020-06-11 15:23:16', '2020-06-11 15:23:16')[0m
+  ↳ app/controllers/tasks_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:14
+Redirected to http://localhost:3000/create_task
+Completed 302 Found in 47ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 15:23:16 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 286ms (Views: 270.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:23:29 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.1ms)
+  Rendered tasks/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 301ms (Views: 283.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:23:53 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.3ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.0ms)
+  Rendered tasks/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 389ms (Views: 370.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:23:54 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.0ms)
+  Rendered tasks/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 329ms (Views: 312.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:23:55 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (2.9ms)
+  Rendered tasks/index.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 365ms (Views: 344.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 15:24:01 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 268ms (Views: 250.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:24:03 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.6ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.6ms)
+  Rendered tasks/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 352ms (Views: 332.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 15:24:04 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 376ms (Views: 353.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_user" for 172.19.0.1 at 2020-06-11 15:24:05 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create_user as HTML
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 345ms (Views: 328.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_user" for 172.19.0.1 at 2020-06-11 15:24:09 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create_user as HTML
+  Rendering sessions/create_user.html.erb within layouts/application
+  Rendered sessions/create_user.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 302ms (Views: 284.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 15:24:12 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 370ms (Views: 352.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:24:48 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.0ms)
+  Rendered tasks/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 317ms (Views: 295.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 15:24:55 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 299ms (Views: 279.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:24:58 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.4ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.1ms)
+  Rendered tasks/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 385ms (Views: 365.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 15:24:59 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 232ms (Views: 215.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:25:01 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.4ms)
+  Rendered tasks/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 426ms (Views: 401.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 15:25:03 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 409ms (Views: 386.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:25:33 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.0ms)
+  Rendered tasks/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 322ms (Views: 299.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/create_task" for 172.19.0.1 at 2020-06-11 15:25:34 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#create as HTML
+  Rendering tasks/create.html.erb within layouts/application
+  Rendered tasks/create.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 303ms (Views: 285.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 172.19.0.1 at 2020-06-11 15:25:37 +0000
+Cannot render console from 172.19.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TasksController#index as HTML
+  Rendering tasks/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:10
+  [1m[36mTLearnContext Load (0.5ms)[0m  [1m[34mSELECT `t_learn_contexts`.* FROM `t_learn_contexts`[0m
+  ↳ app/views/tasks/_logged_in.html.erb:32
+  Rendered tasks/_logged_in.html.erb (3.1ms)
+  Rendered tasks/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 348ms (Views: 325.5ms | ActiveRecord: 1.1ms)
+
+

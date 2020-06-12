@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get '/tasks', to:'tasks#index'
   get '/create_user', to:'sessions#create_user'
   post '/create_user', to:'sessions#create_user_post'
+  get '/create_task', to:'tasks#create'
+  post '/create_task',to:'tasks#create_post'
 end
